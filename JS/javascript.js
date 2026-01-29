@@ -7,10 +7,16 @@
 7. *
 8. * @return {void} No devuelve ningún valor.
 9. */
+
+console.log("Hola");
  function inicializarJuego() {
  
+    setTimeout(() => {
+         const contenedor = document.querySelector('.contenedor-juego');
+         if (contenedor) contenedor.style.opacity = '1';
+         }, 100)
 
-
+        
  }
 
 
@@ -30,6 +36,8 @@
 13. */
 
  function jugar(eleccionUsuario) {
+    
+
     
     
 
