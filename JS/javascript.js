@@ -1,4 +1,9 @@
- /**
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+/**
 2. * @brief Inicializa el juego configurando los elementos, estados y eventos necesarios.
 3. *
 4. * Esta función prepara todo lo necesario para que el juego pueda comenzar,
@@ -8,12 +13,15 @@
 8. * @return {void} No devuelve ningún valor.
 9. */
 
-console.log("Hola");
+
+inicializarJuego;
+
  function inicializarJuego() {
  
     setTimeout(() => {
          const contenedor = document.querySelector('.contenedor-juego');
          if (contenedor) contenedor.style.opacity = '1';
+         console.log("test");
          }, 100)
 
         
@@ -35,11 +43,11 @@ console.log("Hola");
 12. * @return {void} No devuelve ningún valor.
 13. */
 
+
+
  function jugar(eleccionUsuario) {
     
 
-    
-    
 
  }
  /**
@@ -138,3 +146,5 @@ function mostrarEleccion(display, eleccion, jugador) {
  function inicializarTooltips() {
  
 }
+
+});
