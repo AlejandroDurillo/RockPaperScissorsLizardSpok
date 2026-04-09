@@ -14,10 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
 9. */
 
 
-inicializarJuego;
-
+inicializarJuego();
+ jugar();
  function inicializarJuego() {
- 
     setTimeout(() => {
          const contenedor = document.querySelector('.contenedor-juego');
          if (contenedor) contenedor.style.opacity = '1';
@@ -26,6 +25,7 @@ inicializarJuego;
 
         
  }
+
 
 
  /**
@@ -44,10 +44,45 @@ inicializarJuego;
 13. */
 
 
-
  function jugar(eleccionUsuario) {
-    
+   const btnPiedra = document.getElementById("piedra");
+   const btnPapel = document.getElementById("papel");
+   const btnTijera = document.getElementById("tijera");
+   const btnLagarto = document.getElementById("lagarto");
+   const btnSpock = document.getElementById("spock");
 
+   if(btnPiedra){
+       btnPiedra.addEventListener("click", () => {
+           const texto = document.getElementById("texto-jugada");
+         texto.textContent = "Piedra";
+      });
+   }
+   if(btnPapel){
+       btnPapel.addEventListener("click", () => {
+           const texto = document.getElementById("texto-jugada");
+         texto.textContent = "Papel";
+      });
+   }
+   if(btnTijera){
+       btnTijera.addEventListener("click", () => {
+           const texto = document.getElementById("texto-jugada");
+         texto.textContent = "Tijera";
+      });
+   }
+   if(btnLagarto){
+       btnLagarto.addEventListener("click", () => {
+           const texto = document.getElementById("texto-jugada");
+         texto.textContent = "Lagarto";
+      });
+   }
+   if(btnSpock){
+       btnSpock.addEventListener("click", () => {
+           const texto = document.getElementById("texto-jugada");
+         texto.textContent = "Spock";
+      });
+   }
+   
+ 
 
  }
  /**
